@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-6">
               <img 
-                src="logo.png" 
+                src="/logo-tuca.png" 
                 alt="Tuca Racing Logo" 
                 className="h-20 md:h-24 w-auto object-contain"
               />

@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { NAV_ITEMS } from '../constants';
+import { NAV_ITEMS } from '../constants.tsx';
 
 interface NavbarProps {
   activeSection: string;
@@ -39,9 +38,9 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               className="flex items-center transition-opacity hover:opacity-90"
             >
               <img 
-                src="logo.png" 
+                className="site-logo" 
+                src="/logo-tuca.png" 
                 alt="Tuca Racing Logo" 
-                className="h-14 md:h-16 w-auto object-contain"
               />
             </a>
           </div>

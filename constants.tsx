@@ -1,6 +1,6 @@
 import React from 'react';
 import { Settings, Wrench, ShieldCheck, Zap, Gauge, MapPin } from 'lucide-react';
-import { ServiceItem, NavItem } from './types';
+import { ServiceItem, NavItem } from './types.ts';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Início', href: '#home', id: 'home' },
