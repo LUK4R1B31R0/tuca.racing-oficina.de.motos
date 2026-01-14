@@ -1,0 +1,7 @@
+{
+  "name": "Tuca Racing - Oficina de Motos",
+  "description": "Site profissional para a oficina Tuca Racing, focado em credibilidade, serviços de manutenção e conversão local via WhatsApp.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
