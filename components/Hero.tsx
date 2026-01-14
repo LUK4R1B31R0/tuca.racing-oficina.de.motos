@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { ChevronRight, MessageCircle } from 'lucide-react';
-import { WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINK } from '../constants.tsx';
 
 export const Hero: React.FC = () => {
   return (
@@ -53,14 +52,4 @@ export const Hero: React.FC = () => {
               <p className="text-white font-oswald text-2xl font-bold">25+ ANOS</p>
               <p className="text-neutral-400 text-[10px] uppercase tracking-wider font-bold">Experiência com Alta Cilindrada</p>
             </div>
-            <div className="hidden sm:block w-px h-10 bg-white/10"></div>
-            <div>
-              <p className="text-white font-oswald text-2xl font-bold uppercase tracking-tighter">Especialistas</p>
-              <p className="text-neutral-400 text-[10px] uppercase tracking-wider font-bold">Motos de Alta Cilindrada</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+            <div className="hidden sm:block w-px h-
