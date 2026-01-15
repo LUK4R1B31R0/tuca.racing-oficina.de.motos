@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const Footer: React.FC = () => {
@@ -7,12 +6,11 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <div className="flex items-center mb-6">
-              <img 
-                src="/logo-tuca.png" 
-                alt="Tuca Racing Logo" 
-                className="h-20 md:h-24 w-auto object-contain"
-              />
+            <div className="flex flex-col mb-6">
+              <span className="font-oswald text-3xl font-bold tracking-tighter uppercase text-white">
+                Tuca<span className="text-red-600">Racing</span>
+              </span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-neutral-500 mt-1">Alta Performance</span>
             </div>
             <p className="text-neutral-400 max-w-sm mb-6 leading-relaxed">
               Especialistas em manutenção de motocicletas com foco em qualidade, transparência e confiança. Sua moto cuidada por quem entende de verdade.
@@ -41,7 +39,7 @@ export const Footer: React.FC = () => {
 
         <div className="pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-neutral-500">
           <p>© {new Date().getFullYear()} Tuca Racing Oficina de Motos. Todos os direitos reservados.</p>
-          <p>Desenvolvido com foco em alta performance.</p>
+          <p>Vinhedo - SP</p>
         </div>
       </div>
     </footer>

@@ -22,8 +22,8 @@ export const About: React.FC = () => {
           
           <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl bg-neutral-900 border border-neutral-800">
             <img
-              src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?q=80&w=2070&auto=format&fit=crop"
-              alt="Detalhe técnico de motocicleta de alta cilindrada"
+              src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?q=80&w=2070&auto=format&fit=crop"
+              alt="Ducati Panigale V4 - Especialidade Tuca Racing"
               className="w-full aspect-[4/3] object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
