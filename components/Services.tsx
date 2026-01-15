@@ -1,5 +1,5 @@
 import React from 'react';
-import { SERVICES, WHATSAPP_LINK } from '../constants';
+import { SERVICES, WHATSAPP_LINK } from '../constants.tsx';
 import { ArrowUpRight } from 'lucide-react';
 
 export const Services: React.FC = () => {
@@ -32,7 +32,7 @@ export const Services: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-16 bg-neutral-900 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 text-white">
+      <div className="mt-16 bg-neutral-900 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 text-white text-left">
         <div>
           <h4 className="text-2xl md:text-3xl font-oswald font-bold uppercase mb-2 tracking-tighter">Atendimento Técnico Direto</h4>
           <p className="text-neutral-400 max-w-lg font-light">

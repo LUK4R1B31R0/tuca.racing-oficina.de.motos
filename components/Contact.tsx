@@ -1,12 +1,12 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from 'lucide-react';
-import { WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINK } from '../constants.tsx';
 
 export const Contact: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        <div>
+        <div className="text-left">
           <h2 className="text-sm font-bold text-red-600 uppercase tracking-widest mb-2">Contato</h2>
           <h3 className="text-4xl font-oswald font-bold text-neutral-900 mb-8 uppercase tracking-tighter">Agende sua Visita Técnica</h3>
           
@@ -79,9 +79,9 @@ export const Contact: React.FC = () => {
               ></iframe>
            </div>
            
-           <div className="bg-red-600 p-8 rounded-3xl text-white">
+           <div className="bg-red-600 p-8 rounded-3xl text-white text-left">
               <h4 className="text-2xl font-oswald font-bold uppercase mb-4 tracking-tighter">Confiança de quem vive motos</h4>
-              <p className="mb-6 text-red-100 text-sm font-light">Agende seu atendimento técnico agora e garanta a melhor performance para sua alta cilindrada.</p>
+              <p className="mb-6 text-red-100 text-sm font-light text-left">Agende seu atendimento técnico agora e garanta a melhor performance para sua alta cilindrada.</p>
               <a 
                 href={WHATSAPP_LINK} 
                 target="_blank"

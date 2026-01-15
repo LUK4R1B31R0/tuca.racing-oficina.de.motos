@@ -20,24 +20,10 @@
             font-family: 'Oswald', sans-serif;
         }
         .site-logo {
-            height: 38px;
+            height: 44px;
             width: auto;
             display: block;
             object-fit: contain;
-        }
-        /* Fallback de erro simples */
-        #error-fallback {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: #0a0a0a;
-            color: white;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            z-index: 9999;
-            padding: 20px;
         }
     </style>
 <script type="importmap">
@@ -54,27 +40,6 @@
 </head>
 <body class="bg-neutral-50 text-neutral-900">
     <div id="root"></div>
-    <div id="error-fallback">
-        <h1 style="font-size: 2rem; margin-bottom: 1rem; font-family: 'Oswald', sans-serif; font-weight: bold; text-transform: uppercase;">Tuca Racing</h1>
-        <p style="margin-bottom: 2rem; opacity: 0.8; max-width: 400px; font-size: 0.9rem;">Ocorreu um erro técnico ao carregar o site. Para agendamentos e dúvidas, utilize nossos canais oficiais:</p>
-        <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
-            <a href="https://wa.me/5519996602060" style="background: #25d366; color: white; padding: 14px 28px; border-radius: 12px; font-weight: bold; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">WhatsApp</a>
-            <a href="https://www.instagram.com/tucaracing/" style="background: #e1306c; color: white; padding: 14px 28px; border-radius: 12px; font-weight: bold; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Instagram</a>
-        </div>
-    </div>
     <script type="module" src="index.tsx"></script>
-    <script>
-        // Monitor de erro para exibir fallback se o React falhar no carregamento inicial ou runtime
-        window.addEventListener('error', function(e) {
-            console.error('Runtime error:', e);
-            const root = document.getElementById('root');
-            // Se o root estiver vazio após 1 segundo, mostra fallback
-            setTimeout(() => {
-                if (!root || root.innerHTML.trim() === '') {
-                    document.getElementById('error-fallback').style.display = 'flex';
-                }
-            }, 1000);
-        });
-    </script>
 </body>
 </html>
