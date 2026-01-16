@@ -1,5 +1,5 @@
 
-import React, { ErrorInfo, ReactNode } from 'react';
+import React, { Component, ErrorInfo, ReactNode } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 
@@ -15,10 +15,13 @@ interface ErrorBoundaryState {
 
 // @fix: Use explicit React.Component to ensure property 'props' is correctly inherited and typed
 class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
-  // Initialize state directly to ensure the type system picks up generics correctly
-  state: ErrorBoundaryState = { hasError: false };
+  // @fix: Initialize state in constructor or directly with type annotation
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
+    this.state = { hasError: false };
+  }
 
-  static getDerivedStateFromError() {
+  static getDerivedStateFromError(_: Error): ErrorBoundaryState {
     return { hasError: true };
   }
 
@@ -29,6 +32,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
 
   render() {
     const { hasError } = this.state;
+    // @fix: Accessing this.props is now valid as the component correctly inherits from React.Component
     const { children } = this.props;
 
     if (hasError) {
