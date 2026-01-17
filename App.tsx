@@ -7,7 +7,6 @@ import { Services } from './components/Services.tsx';
 import { Contact } from './components/Contact.tsx';
 import { Footer } from './components/Footer.tsx';
 import { WhatsAppButton } from './components/WhatsAppButton.tsx';
-import { AIConsultant } from './components/AIConsultant.tsx';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -54,7 +53,6 @@ const App: React.FC = () => {
 
       <Footer />
       <WhatsAppButton />
-      <AIConsultant />
     </div>
   );
 };
